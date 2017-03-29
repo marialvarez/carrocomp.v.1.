@@ -53,6 +53,7 @@ $font-bold: bold;
         }
         .col-md-5 {
             padding: 0;
+            width: 100px;
         }
         .cant {
             font-size: $subtitulo;  
@@ -75,8 +76,14 @@ $font-bold: bold;
             padding: 0 !important;
         }
         .precio {
-            width: 60px;
+            width: 82px;          
+            span {
+                display: inline-block;
+                color: $yellow-color;  
+            }
             p {
+                width: 40px;
+                display: inline-block;
                 color: $yellow-color;
                 font-size: 18px;
                 font-weight: $font-bold;
@@ -92,7 +99,7 @@ $font-bold: bold;
     }
     .row {
         padding: 0 !important;
-        margin: 0 30px !important;
+        margin: 0 10px !important;
     }
     .car {
         width: 40px;

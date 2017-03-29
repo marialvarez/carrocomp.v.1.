@@ -6,27 +6,35 @@ $subtitulo: 20px;
     margin: 0;
     //outline: 1px solid rgba(255,0,0,0.5);
 }
-
-.navbar {
+.header {
+    position: absolute;
+    top:0;
+    z-index: 2000;
     background-color: #fff;
     padding: 15px 0;
+    width: 100%;
+    
     img {
+        float: left;
         width: 200px;
     }
-}
-
-#informacion {
-    float: right;
-    color: #fff;
-    background-color: $yellow;
-    border-radius: 50%;
     
-    i {
-        font-size: 30px;
-        padding: 3px 12px; 
-    }     
-}
+    #informacion {
+        float: right;
+        color: #fff;
+        background-color: $yellow;
+        border-radius: 50%;
 
+        i {
+            font-size: 30px;
+            padding: 3px 12px; 
+        }     
+    }
+    .tooltip-inner {
+        background-color: #fff;
+        color: #000;
+    }
+}
 
 
 

@@ -5,4 +5,7 @@ function Camioneta(){
 		// retorna la cantidad de litros que gasta en una distancia
         return (distancia/consumo)*bencina;
 	}
+    this.pasajeros = 8;
+    this.tipo = 'minivan';
+    this.img = 'src/img/van.jpg';
 }
