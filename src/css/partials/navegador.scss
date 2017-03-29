@@ -1,0 +1,32 @@
+$yellow:#ffcc00;
+$subtitulo: 20px;
+
+*{
+    padding: 0;
+    margin: 0;
+    //outline: 1px solid rgba(255,0,0,0.5);
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 0;
+    img {
+        width: 200px;
+    }
+}
+
+#informacion {
+    float: right;
+    color: #fff;
+    background-color: $yellow;
+    border-radius: 50%;
+    
+    i {
+        font-size: 30px;
+        padding: 3px 12px; 
+    }     
+}
+
+
+
+

@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.navbar {
+  background-color: #fff;
+  padding: 15px 0; }
+  .navbar img {
+    width: 200px; }
+
+#informacion {
+  float: right;
+  color: #fff;
+  background-color: #ffcc00;
+  border-radius: 50%; }
+  #informacion i {
+    font-size: 30px;
+    padding: 3px 12px; }
+
+/*-------------------MAPA--------------*/
+#map {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1; }
+
+/*-------------LUGAR-------------*/
+#home-sec .lugar {
+  width: 350px;
+  padding: 15px 0;
+  position: absolute;
+  top: 100px;
+  z-index: 1000;
+  background-color: #fff; }
+  #home-sec .lugar .origen, #home-sec .lugar .destino {
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 5x;
+    margin: 0 30px;
+    font-weight: bold; }
+  #home-sec .lugar select {
+    font-weight: 200 !important; }
+#home-sec button {
+  position: absolute;
+  top: 180px;
+  z-index: 1000; }
+#home-sec .form-control {
+  border-color: #ffcc00; }
+
+/*-------------VEHICULOS-------------*/
+#carros_selec .vehiculos {
+  width: 350px;
+  padding: 10px 0;
+  position: absolute;
+  top: 330px;
+  z-index: 1000;
+  background-color: #fff; }
+  #carros_selec .vehiculos p {
+    padding-top: 0;
+    margin-bottom: 0; }
+  #carros_selec .vehiculos small {
+    font-size: 10px; }
+  #carros_selec .vehiculos .col-md-5 {
+    padding: 0; }
+  #carros_selec .vehiculos .cant {
+    font-size: 15px;
+    font-weight: bold; }
+  #carros_selec .vehiculos .pasajeros {
+    width: 50px;
+    border: 1px solid #ffcc00; }
+  #carros_selec .vehiculos .cant_pas {
+    padding: 10px 0 0 0 !important; }
+  #carros_selec .vehiculos .tipo {
+    font-weight: bold; }
+  #carros_selec .vehiculos .gap {
+    margin-top: 15px; }
+  #carros_selec .vehiculos .cant-row {
+    padding: 0 !important; }
+  #carros_selec .vehiculos .precio {
+    width: 60px; }
+    #carros_selec .vehiculos .precio p {
+      color: #ffcc00;
+      font-size: 18px;
+      font-weight: bold; }
+#carros_selec .selec {
+  font-size: 15px;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+  margin: 0 30px;
+  font-weight: bold; }
+#carros_selec .row {
+  padding: 0 !important;
+  margin: 0 30px !important; }
+#carros_selec .car {
+  width: 40px; }
+#carros_selec button {
+  position: absolute;
+  top: 270px;
+  z-index: 1000; }
+
+/*# sourceMappingURL=style.css.map */

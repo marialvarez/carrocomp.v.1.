@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Examen Herramientas Productividad</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="src/css/bootstrap.css">
+	<link rel="stylesheet" href="src/css/font-awesome.css">
+	<link rel="stylesheet" href="src/css/sweetalert.css">
+	<link rel="stylesheet" href="src/css/style.css">
+	<!--REQUIRED STYLE SHEETS-->
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		    <div class="navbar-header page-scroll">
+                <img class="img-responsive" src="src/img/logo-gris.jpg" alt="">
+            </div>
+            <a href="#" id="informacion" data-toggle="tooltip" data-placement="bottom"
+             title="Carrocomp! La nueva forma de moverte en la ciudad." data-original-title="Tooltip on bottom"
+             class="red-tooltip">
+                <i class="fa fa-info" aria-hidden="true">
+                </i>
+            </a>
+		</div>
+	</div>
+	<!--END NAV SECTION -->
+	<div id="map">
+	</div>
+	<!--END MAP SECTION -->
+	<div id="home-sec">   
+		<div class="container">
+            <div class="lugar">
+                <div class="origen">ORIGEN
+                <div class="form-group">
+                    <select class="form-control" id="start">
+                        <option value="" id="primera">Seleccione</option>
+                        <option value="Arica, Chile">Arica</option>
+                        <option value="Iquique, Chile">Iquique</option>
+                        <option value="Antofagasta, Chile">Antofagasta</option>
+                        <option value="Calama, Chile">Calama</option>
+                        <option value="La serena, Chile">La Serena</option>
+                        <option value="Valparaiso, Chile">Valparaiso</option>
+                        <option value="Santiago, Chile">Santiago</option>
+                        <option value="Rancagua, Chile">Rancagua</option>
+                        <option value="Talca, Chile">Talca</option>
+                        <option value="Concepcion, Chile">Concepción</option>
+                        <option value="Temuco, Chile">Temuco</option>
+                        <option value="Valdivia, Chile">Valdivia</option>
+                        <option value="Puerto Montt, Chile">Puerto Montt</option>
+                        <option value="Coyhaique, Chile">Coyhaique</option>
+                        <option value="Punta Arenas">Punta Arenas</option>
+                    </select>
+                </div>
+                </div>
+                <div class="destino">DESTINO
+                <div class="form-group">
+                    <select class="form-control" id="end" >
+                        <option value="">Seleccione</option>
+                        <option value="Arica, Chile">Arica</option>
+                        <option value="Iquique, Chile">Iquique</option>
+                        <option value="Antofagasta, Chile">Antofagasta</option>
+                        <option value="Calama, Chile">Calama</option>
+                        <option value="La serena, Chile">La Serena</option>
+                        <option value="Valparaiso, Chile">Valparaiso</option>
+                        <option value="Santiago, Chile">Santiago</option>
+                        <option value="Rancagua, Chile">Rancagua</option>
+                        <option value="Talca, Chile">Talca</option>
+                        <option value="Concepcion, Chile">Concepción</option>
+                        <option value="Temuco, Chile">Temuco</option>
+                        <option value="Valdivia, Chile">Valdivia</option>
+                        <option value="Puerto Montt, Chile">Puerto Montt</option>
+                        <option value="Coyhaique, Chile">Coyhaique</option>
+                        <option value="Punta Arenas, Chile">Punta Arenas</option>
+                    </select>
+                </div>
+                </div>
+                <button id="busqueda" class="btn btn-warning btn-block">BUSCAR</button>
+            </div>
+        </div>
+    </div>
+    <!--END HOME SECTION-->  
+	<section id="carros_selec">
+		<div class="container">
+            <div class="vehiculos">
+                <div class="selec">VEHICULO
+                <br>seleccione:
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <input value="motocicleta" name="vehi" type="radio" class="gap" id="moto">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-responsive car" src="src/img/moto.jpg">
+                    </div>
+                    <div class="col-md-5">
+				        <p class="tipo">Motocicleta</p>
+                        <small>máximo 2 pasajeros</small>
+                    </div>
+                    <div class="col-md-3 precio">
+				        <p id="precio1"></p>
+				    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <input value="auto" name="vehi" type="radio" class="gap" id="auto">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-responsive car" src="src/img/auto.jpg">
+                    </div>
+                    <div class="col-md-5">
+				        <p class="tipo">Automovil</p>
+                        <small>máximo 5 pasajeros</small>
+                    </div>
+                    <div class="col-md-3 precio">
+				        <p id="precio2"></p>
+				    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <input value="minivan"
+                        name="vehi" type="radio" class="gap" id="moto">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-responsive car" src="src/img/van.jpg">
+                    </div>
+                    <div class="col-md-5">
+				        <p class="tipo">MiniVan</p>
+                        <small>máximo 10 pasajeros</small>
+                    </div>
+                    <div class="col-md-3 precio">
+				        <p id="precio3"></p>
+				    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <input value="camion"
+                        name="vehi" type="radio" class="gap" id="moto">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-responsive car" src="src/img/camion.jpg">
+                    </div>
+                    <div class="col-md-5">
+				        <p class="tipo">Camión</p>
+                        <small>máximo 3 pasajeros</small>
+                    </div>
+                    <div class="col-md-3 precio">
+				        <p id="precio4"></p>
+				    </div>
+                </div>
+                <div class="row cant_pas">
+                    <div class="col-md-8 cant-row">
+                        <div class="cant">CANTIDAD PASAJEROS: 
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="pas" class="pasajeros" type="text">
+                    </div>
+                    
+                </div>
+                <button id="btn_compartir" class="btn btn-warning btn-block">COMPARTIR CARRO!</button>
+            </div>
+        </div>
+	</section><!--END ABOUT SECTION-->
+	<section id="calculator" >
+		<div class="container">
+		<div></div>
+		</div>
+	</section><!--END PROJECT SECTION-->
+	<div id="footer">
+		2014 www.yourdomain.com | All Right Reserved  
+	</div><!-- END FOOTER SECTION -->
+    <script src="src/js/jquery.js"></script>
+	<script src="src/js/bootstrap.js"></script>
+	<script src="src/js/scroll.js"></script>
+	<script src="src/js/custom.js"></script>
+	<script src="src/js/sweetalert-dev.js"></script>
+	<script src="src/js/ciudades.js"></script>
+	<script src="src/js/moto.js"></script>
+	<script src="src/js/auto.js"></script>
+	<script src="src/js/camioneta.js"></script>
+	<script src="src/js/camion.js"></script>
+	<script src="src/js/carros.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCqoAARuw47ZDf2wg7OlrkVaPnDAlNbI&callback=initMap"
+    async defer></script>
+</body>
+</html>
