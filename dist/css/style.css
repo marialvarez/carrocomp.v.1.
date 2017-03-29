@@ -2,20 +2,27 @@
   padding: 0;
   margin: 0; }
 
-.navbar {
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 2000;
   background-color: #fff;
-  padding: 15px 0; }
-  .navbar img {
+  padding: 15px 0;
+  width: 100%; }
+  .header img {
+    float: left;
     width: 200px; }
-
-#informacion {
-  float: right;
-  color: #fff;
-  background-color: #ffcc00;
-  border-radius: 50%; }
-  #informacion i {
-    font-size: 30px;
-    padding: 3px 12px; }
+  .header #informacion {
+    float: right;
+    color: #fff;
+    background-color: #ffcc00;
+    border-radius: 50%; }
+    .header #informacion i {
+      font-size: 30px;
+      padding: 3px 12px; }
+  .header .tooltip-inner {
+    background-color: #fff;
+    color: #000; }
 
 /*-------------------MAPA--------------*/
 #map {
@@ -24,7 +31,9 @@
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 1; }
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
 
 /*-------------LUGAR-------------*/
 #home-sec .lugar {
@@ -63,7 +72,8 @@
   #carros_selec .vehiculos small {
     font-size: 10px; }
   #carros_selec .vehiculos .col-md-5 {
-    padding: 0; }
+    padding: 0;
+    width: 100px; }
   #carros_selec .vehiculos .cant {
     font-size: 15px;
     font-weight: bold; }
@@ -79,8 +89,13 @@
   #carros_selec .vehiculos .cant-row {
     padding: 0 !important; }
   #carros_selec .vehiculos .precio {
-    width: 60px; }
+    width: 82px; }
+    #carros_selec .vehiculos .precio span {
+      display: inline-block;
+      color: #ffcc00; }
     #carros_selec .vehiculos .precio p {
+      width: 40px;
+      display: inline-block;
       color: #ffcc00;
       font-size: 18px;
       font-weight: bold; }
@@ -92,12 +107,24 @@
   font-weight: bold; }
 #carros_selec .row {
   padding: 0 !important;
-  margin: 0 30px !important; }
+  margin: 0 10px !important; }
 #carros_selec .car {
   width: 40px; }
 #carros_selec button {
   position: absolute;
   top: 270px;
   z-index: 1000; }
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%; }
+
+  #map {
+    width: 100%;
+    height: 100%; }
+
+  .header {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
